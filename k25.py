@@ -3,7 +3,13 @@ from standfordkarel import *
 
 def main():
     """Karel code goes here!"""
-   
+   move()
+   move()
+   turn_left()
+   Move()
+   move()
+   pick_beeper()
+pass
   
 
 
