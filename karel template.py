@@ -1,4 +1,4 @@
-from standfordkarel import *
+ from standfordkarel import *
 
 
 def main():

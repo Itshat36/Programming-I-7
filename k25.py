@@ -1,15 +1,28 @@
 from standfordkarel import *
-
+        
 
 def main():
-    """Karel code goes here!"""
-   move()
+   """Karel code goes here!"""
    move()
    turn_left()
    Move()
    move()
+   move()
    pick_beeper()
-pass
+   turn_left()
+   move_forward()
+   Turn_left()
+   turn_left()
+   turn_left()
+   move()
+   move()
+   turn_left()
+   turn_left()
+   turn_left()
+   move()
+   move()
+   move()
+   pass
   
 
 
