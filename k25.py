@@ -1,17 +1,17 @@
-from standfordkarel import *
+from stanfordkarel import *
         
 
 def main():
    """Karel code goes here!"""
    move()
    turn_left()
-   Move()
+   move()
    move()
    move()
    pick_beeper()
    turn_left()
-   move_forward()
-   Turn_left()
+   move()
+   turn_left()
    turn_left()
    turn_left()
    move()
