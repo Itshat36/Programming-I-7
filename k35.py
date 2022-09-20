@@ -1,10 +1,10 @@
- from stanfordkarel import *
+from stanfordkarel import *
 
 
 class ktools:
  def m(self):
    """shorthand for move"""
-    move()
+   move()
  def tl(self):
    """"Turn Left"""
    turn_left()
@@ -60,9 +60,13 @@ class ktools:
 
 
  def e(self):
+   """print E"""
+   
  def l(self):
+   """print L"""
 
  def o(self):
+  """print O"""
    
 def main():
     """Karel code goes here!"""
