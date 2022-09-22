@@ -1,10 +1,10 @@
- from stanfordkarel import *
+from stanfordkarel import *
 
 
 class ktools:
-   def m(self):
+ def m(self):
    """shorthand for move"""
-    move()
+   move()
  def tl(self):
    """"Turn Left"""
    turn_left()
