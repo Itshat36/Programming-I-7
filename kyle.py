@@ -142,7 +142,52 @@ class ktools:
    self.put()
    self.ta()
    self.m()
-   
+   self.tl()
+   self.m()
+   self.m()
+   self.m()
+
+  def y(self):
+    self.tl()
+    self.put5()
+    self.m()
+    self.tl()
+    self.m()
+    self.put()
+    self.ta()
+    self.m()
+    self.m()
+    self.put()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tl()
+    self.m()
+  def e(self):
+    self.m()
+    self.put2()
+    self.ta()
+    self.m()
+    self.m()
+    self.tr()
+    self.m()
+    self.put()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.m()
+    self.put2()
+    self.tr()
+    self.m()
+    self.put2()
   def fic(self) -> bool:
     """Front is Clear"""
     return front_is_clear()
@@ -202,6 +247,9 @@ def main():
     """ Karel code goes here! """
     kt = ktools()
     kt.k()
+    kt.y()
+    kt.l()
+    kt.e()
     pass
 
 
