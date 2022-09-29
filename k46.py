@@ -20,7 +20,7 @@ class ktools:
  def pick(self):
    """pick beeper"""
    pick_beeper()
- def put():
+ def put(self):
    """Put beeper"""
    put_beeper()
  def put2(self):
@@ -28,7 +28,7 @@ class ktools:
     self.put()
     self.m()
     self.put()
- def put5():
+ def put5(self):
    """fibe beepers in a line"""
    self.put2()
    self.move()
@@ -87,55 +87,89 @@ class ktools:
        self.tr
        self.m()
      pass
-   def jump(self):
-    """Jump for 510"""
-    while self.fic():
-      self.m()
-    self.tl()
-    while self.rib():
-      self.m()
-    self.tr()
-    self.m()
-    self.tr()
-    while self.fic():
-      self.m()
-    self.tl()
-  
- 
-  
-  
-  
+ def mm(self, num):
+   """move multible"""
+   for number in range(0, num):
+     self.m()
+ def putm(self, num):
+   """put multible"""
+   for i in range(num - 1):
+     self.put()
+     self.m()
+     self.put()
+ def sob(self) -> bool:
+   """standing on beeper"""
+   return beepers_present()
+ def jump(self):
+   """jump for 510"""
+   while self.fic():
+     self.m()
+   self.tl()
+   while self.rib():
+     self.m()
+   self.tr()
+   self.m()
+   self.tr()
+   while self.fic():
+     self.m()
+   self.tl()
+ def find(self):
+   """find for 515"""
+   while not facing_north():
+     self.tl()
+   self.m()
+   if not self.sob():
+     self.tl()
+     self.m()
+     self.tl()
+     self.m()
+   for _ in range(2):
+     if not self.sob():
+       self.m()
+       self.tl()
+       self.m()
+   pass
+ def lineto(self):
+   self.tl()
+   self.m()
+   self.m()
+   self.tr()
+   self.m()
+   self.tr()
+   self.m()
+   self.m()
+   self.tl()
+ def lineo(self):
+   self.tl()
+   self.m()
+   self.tr()
+   self.m()
+   self.tr()
+   self.m()
+   self.tl()
+ def linet(self):
+   self.tl()
+   self.m()
+   self.m()
+   self.m()
+   self.tr()
+   self.m()
+   self.tr()
+   self.m()
+   self.m()
+   self.m()
+   self.tl()
 def main():
-  """Karel code goes here!"""
-  kt = ktools()
-  kt.m()
-  kt.tl()
-  kt.m()
-  kt.mazemove()
-  sleep(3)
-  kt.m()
-  kt.tr()
-  kt.tr()
-  kt.m()
-  kt.mazemove()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.mazemove()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  
-  
-  pass
+   """Karel code goes here!"""
+   kt = ktools()
+   kt.lineto()
+   kt.lineo()
+   kt.m()
+   kt.linet()
+   kt.m()
+   kt.lineto()
+   kt.m()
+   kt.lineto()
+   pass
 if __name__ == "__main__":
   run_karel_program()
