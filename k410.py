@@ -87,57 +87,43 @@ class ktools:
        self.tr
        self.m()
      pass
-   def jump(self):
-    """Jump for 510"""
-    while self.fic():
-      self.m()
-    self.tl()
-    while self.rib():
-      self.m()
-    self.tr()
-    self.m()
-    self.tr()
-    while self.fic():
-      self.m()
-    self.tl()
-  
+ def bo(self):
+   self.m()
+   self.pick()
+ def btr(self):
+   self.m()
+   self.pick()
+   self.tl()
+   self.m()
+   self.pick()
+   self.m()
+   self.pick()
+   self.ta()
+   self.m()
+   self.m()
+   self.tl()
+ def bt(self):
+   self.m()
+   self.pick()
+   self.tl()
+   self.m()
+   self.pick()
+   self.ta()
+   self.m()
+   self.tl()
+   
  
-  
-  
-  
 def main():
-  """Karel code goes here!"""
-  kt = ktools()
-  kt.m()
-  kt.tl()
-  kt.m()
-  kt.mazemove()
-  sleep(3)
-  kt.m()
-  kt.tr()
-  kt.tr()
-  kt.m()
-  kt.mazemove()
-  sleep(2)
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.mazemove()
-  sleep(2)
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.tr()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  kt.m()
-  
-  
-  pass
+   """Karel code goes here!"""
+   kt = ktools()
+   kt.bo()
+   kt.btr()
+   kt.m()
+   kt.bt()
+   kt.m()
+   kt.m()
+   kt.bo()
+   
+   pass
 if __name__ == "__main__":
   run_karel_program()
