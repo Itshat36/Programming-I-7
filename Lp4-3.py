@@ -11,7 +11,6 @@ def main():
     price = 0.4
   elif eggs >=11:
     price = 0.35
-  print("Invalid number of eggs")
 
   cost = price * eggs
   print("price per eggs is $" + str(price))

@@ -4,13 +4,13 @@ def main():
   width = int(input("width in centimeters: "))
   height = int(input("height in centimeters: "))
   yes = 0
-  if weight <= 27:
+  if weight >= 27:
     yes = 2
-  elif lenth * width * height <= 100000:
+  elif lenth * width * height >= 100000:
     yes = 2
   if yes == 2:
     print("too heavy")
-  :
+  if yes ==0:
     print("correct size")
   
   pass
